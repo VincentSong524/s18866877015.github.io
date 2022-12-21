@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        img {
+            margin-left: 20px;
+        }
+        a {
+            margin-top: 20px;
+            color:burlywood
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="HTML">
+    <meta name="description" content="学习HTML">
+    <meta name="author" content="Songwansen">
+    <!--<base> 标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接:-->
+    <base href="https://www.runoob.com/images/" target="_blank">
+
+    <!--据说下面的代码可以为网页添加图标但测试并未成功-->
+    <link rel="shortcut icon" href="images/cc-head.png">
+    <title>head</title>
+</head>
+<body>
+    <img src="logo.png" alt="">
+    <!--因为base设置了href="https://www.runoob.com/images/"所以这里实际链接为"https://www.runoob.com/images/logo.png""-->
+    
+    <br><br>
+    <a href="https://www.runoob.com">菜鸟教程</a>
+    <!--虽然这里没有设置_blank但是因为base设置了target="_blank"所以此处依然会从新窗口点开-->
+</body>
+</html>
