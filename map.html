@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+</head>
+<body>
+    <p>请点击图像上的星球, 把他们放大。</p>
+    <img
+    src="https://www.w3school.com.cn/i/eg_planets.jpg"
+    alt="星球图片"
+    usemap="#planetmap"/>
+
+    <map name="planetmap" id="planetmap">
+        <area
+        shape="circle"
+        coords="180,139,14"
+        href="https://www.w3school.com.cn/example/html/venus.html"
+        target="_blank"
+        alt="Venus"/>
+        
+        <area
+        shape="circle"
+        coords="129,161,10"
+        href="https://www.w3school.com.cn/example/html/mercur.html"
+        target="_blank"
+        alt="mercur"/>
+
+        <area
+        shape="rect"
+        coords="0,0,110,260"
+        href ="https://www.w3school.com.cn/example/html/sun.html"
+        target ="_blank"
+        alt="Sun" />
+    </map>
+    <br>
+
+</body>
+</html>
