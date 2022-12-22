@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        thead {
+            color: green;
+        }
+        tbody {
+            color: blue;
+            height: 50px;
+        }
+        tfoot {
+            color: red;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+</head>
+<body>
+    <p>每个表格由<mark>table</mark>标签开始</p>
+    <p>每个表格行由<mark>tr</mark>标签开始</p>
+    <p>每个表格数据由<mark>td</mark>标签开始</p>
+
+    <h4>一行一列表格:</h4>
+    <table border="1">
+        <tr>
+            <td>100</td>
+        </tr>
+    </table>
+
+    <h4>一行三列表格:</h4>
+    <table border="1">
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+    </table>
+
+    <h4>两行三列表格:</h4>
+    <table border="1">
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>500</td>
+            <td>600</td>
+        </tr>
+    </table>
+
+    <h4>站点导航</h4>
+    <table border="1">
+        <tr>
+            <td><a href="index.html">首页</a></td>
+            <td><a href="p.html">段落</a></td>
+            <td><a href="link.html">链接</a></td>
+            <td><a href="text_format.html">文本格式化</a></td>
+            <td><a href="images.html">图像</a></td>
+            <td><a href="head.html">头部</a></td>
+            <td><a href="exegesis.html">注释</a></td>
+            <td><a href="color.html">颜色</a></td>
+            <td><a href="CSS.html">样式</a></td>
+            <td><a href="mark.html">标记</a></td>
+        </tr>
+    </table>
+
+    <h3>表格边框</h3>
+    <h4>普通边框</h4>
+    <table border="1">
+        <tr>
+            <td>first</td>
+            <td>row</td>
+        </tr>
+        <tr>
+            <td>second</td>
+            <td>row</td>
+        </tr>
+    </table>
+    
+    <h4>粗边框</h4>
+    <table border="8">
+        <tr>
+            <td>first</td>
+            <td>row</td>
+        </tr>
+        <tr>
+            <td>second</td>
+            <td>row</td>
+        </tr>
+    </table>
+    
+    <h4>很粗的边框</h4>
+    <table border="15">
+        <tr>
+            <td>first</td>
+            <td>row</td>
+        </tr>
+        <tr>
+            <td>second</td>
+            <td>row</td>
+        </tr>
+    </table>
+
+    <h4>表格的表头</h4>
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        <tr>
+            <td>胡歌</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>沈腾</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>萧敬腾</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <h4>空表格最好加一个占位符避免显示问题</h4>
+    <table border="1">
+        <tr>
+            <th>电话</th>
+            <th>地址</th>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>济南</td>
+        </tr>
+        <tr>
+            <td>18888888888</td>
+            <td>北京</td>
+        </tr>
+    </table>
+
+    <h4>带标题的标签</h4>
+    <table border="1">
+        <caption>表格标题</caption>        
+        <tr>
+            <th>电话</th>
+            <th>地址</th>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>济南</td>
+        </tr>
+        <tr>
+            <td>18888888888</td>
+            <td>北京</td>
+        </tr>
+    </table>
+
+    <h4>横跨两列的单元格:</h4>
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <th colspan="2">电话</th>
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>453 44 534</td>
+            <td>436 33 432</td>
+        </tr>
+    </table>
+
+    <h4>表格内的标签</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <p>第一个段落</p>
+                <p>第二个段落</p>
+            </td>
+            <td>这个单元包含一个表格
+                <table border="1">
+                    <tr>
+                        <td>A</td>
+                        <TD>B</TD>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>D</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>这个单元包含一个列表
+                <ul>
+                    <li>苹果</li>
+                    <li>香蕉</li>
+                    <li>菠萝</li>
+                </ul>
+            </td>
+            <td align="center">Hello</td>
+        </tr>
+    </table>
+
+    <h3>单元格边距(Cell padding)</h3>
+    <h4>没有 cellpadding:</h4>
+    <table border="1">
+        <tr>
+            <td>First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+    </table>
+    
+    <h4>带有 cellpadding:</h4>
+    <table border="1" cellpadding="10">
+        <tr>
+            <td>First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+    </table>
+
+    <h3>单元格间距(Cell spacing)</h3>
+    <h4>没有 cellspacing:</h4>
+    <table border="1">
+        <tr>
+            <td>First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+    </table>
+    
+    <h4>带有 cellspacing:</h4>
+    <table border="1" cellspacing="10">
+        <tr>
+            <td>First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+    </table>
+
+    <h3>向表格添加背景颜色或背景图像</h3>
+    <table border="1" bgcolor="red">
+        <tr>
+            <td>First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+    </table>
+    
+    <table border="1" background="images/0332.jpg">
+        <tr>
+            <td>First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+    </table>
+    
+    <h3>向表格单元添加背景颜色或背景图像</h3>
+    <table border="1">
+        <tr>
+            <td bgcolor="blue">First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td background="images/0332.jpg">Second</td>
+            <td>Row</td>
+        </tr>
+    </table>
+
+    <h3>在表格单元中排列内容</h3>
+    <table border="1" width="400">
+        <tr>
+            <th align="left">消费项目...</th>
+            <th align="right">一月</th>
+            <th align="right">二月</th>
+        </tr>
+        <tr>
+            <td align="left">衣服</td>
+            <td align="right">$140</td>
+            <td align="right">$200</td>
+        </tr>
+        <tr>
+            <td align="left">化妆品</td>
+            <td align="right">$300</td>
+            <td align="right">$500</td>
+        </tr>
+        <tr>
+            <td align="left">食物</td>
+            <td align="right">$700</td>
+            <td align="right">$800</td>
+        </tr>
+        <tr>
+            <th align="left">总计</th>
+            <th align="right">$1100</th>
+            <th align="right">$1500</th>
+        </tr>
+    </table>
+
+    <p><b>注释：</b>frame 属性无法在 Internet Explorer 中正确地显示。</p>
+    <p>Table with frame="box":</p>
+    <table frame="box">
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+    
+    <p>Table with frame="above":</p>
+    <table frame="above">
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+
+    <p>Table with frame="below":</p>
+    <table frame="below">
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+    
+    <p>Table with frame="hsides":</p>
+    <table frame="hsides">
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+    
+    <p>Table with frame="visdes":</p>
+    <table frame="vsides">
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+
+    <p>带有 thead、tbody 以及 tfoot 元素的 HTML 表格：</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
