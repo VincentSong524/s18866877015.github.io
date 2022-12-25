@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        span.color {
+            color: red;
+        }
+        #myheader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+        /* 设置 id 为 "myotherHeader" 的元素的样式 */
+        #myotherheader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+        /*设置名为 "city" 的所有元素样式*/
+        .city {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id</title>
+</head>
+<body>
+    <h1 id="top">id属性</h1>
+    <p><span class="color">id</span> 属性指定 HTML 元素的唯一 ID。 <span class="color">id</span> 属性的值在 HTML 文档中必须是唯一的。<br>
+    属性用于指向样式表中的特定样式声明。JavaScript 也可使用它来访问和操作拥有特定 ID 的元素。<br>
+    <span class="color">id</span> 的语法是：写一个井号 (#)，后跟一个 <span class="color">id</span> 名称。然后，在花括号 {} 中定义 CSS 属性。</p>
+    <h1>id属性</h1>
+    <p>使用 CSS 设置 id 为 “myheader” 的元素样式：</p>
+    <h1 id="myheader">My Header</h1>
+    <p>
+        <span class="color">注释：</span>id 名称对大小写敏感！<br>
+
+        <span class="color">注释：</span>id 必须包含至少一个字符，且不能包含空白字符（空格、制表符等）。
+    </p>
+
+    <h1>Class 与 ID 的差异</h1>
+
+    <p>一个类名可以由多个 HTML 元素使用，而一个 id 名称只能由页面中的一个 HTML 元素使用：</p>
+
+    <!-- 拥有唯一 id 的元素 -->
+    <h1 id="myotherHeader">我的城市</h1>
+
+    <!-- 拥有相同类名的多个元素 -->
+    <h2 class="city">上海</h2>
+    <p>中国最大的经济城市。</p>
+
+    <h2 class="city">深圳</h2>
+    <p>中国最具创新力的城市。</p>
+
+    <h2 class="city">北京</h2>
+    <p>中国的首都。</p>
+
+
+    <h1>通过 ID 和链接实现 HTML 书签</h1>
+
+    <a href="#top">跳转到顶部</a>
+</body>
+</html>
