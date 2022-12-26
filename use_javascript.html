@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>在JavaScript中使用id属性</h1>
+    <p>avaScript 可以使用 getElementById() 方法访问具有指定 ID 的元素：</p>
+    <h2 id="myHeader">What the fuck!</h2>
+    <button onclick="displayResult()">改变文本</button>
+
+    <script>
+        function displayResult() {
+            document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        }
+    </script>
+    <br/>
+    <a href="index.html">返回首页</a>
+</body>
+</html>
