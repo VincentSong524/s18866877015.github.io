@@ -18,6 +18,31 @@
         }
     </script>
     <br/>
+    
+    <h1>JavaScript事例</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">点击显示日期和时间</button>
+    <p id="demo"></p>
+
+    <h1>使用JavaScript更改文本</h1>
+    <p>本例 “Hello JavaScript!” 写入 id=“text” 的 HTML 元素内:</p>
+    <p id="text"></p>
+    <script>
+        document.getElementById("text").innerHTML = "Hello JavaScript!";
+    </script>
+
+    <p id="demo2">JavaScript 可以更改 HTML 元素的样式。</p>
+
+    <script>
+    function myFunction() {
+        document.getElementById("demo2").style.fontSize = "25px"; 
+        document.getElementById("demo2").style.color = "red";
+        document.getElementById("demo2").style.backgroundColor = "yellow";        
+    }
+    </script>
+
+    <button type="button" onclick="myFunction()">点击我！</button>
+    <br/>
+
     <a href="index.html">返回首页</a>
 </body>
 </html>
